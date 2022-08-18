@@ -19,6 +19,9 @@ module.exports = {
       sans: ['Antonio', 'sans-serif'],
       serif: ['Spartan', 'serif'],
     },
+    container: {
+      center: true,
+    },
     
   },
   plugins: [],

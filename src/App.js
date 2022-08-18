@@ -1,14 +1,14 @@
 import React from "react";
+import Mercury from "./components/Mercury";
 import Navbar from "./components/Navbar";
 import "./index.css";
 
 function App() {
   return (
-    
-      <div>
-        <Navbar />
-      </div>
-    
+    <div>
+      <Navbar />
+      <Mercury />
+    </div>
   );
 }
 
