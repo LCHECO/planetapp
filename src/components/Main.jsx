@@ -3,7 +3,7 @@ import { Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune } from '.
 
 const Main = () => {
   return (
-    <div>
+    <div className='text-white'>
         <Mercury />
         <Venus />
         <Earth />
