@@ -28,7 +28,7 @@ const mercuryData = {
   }
 }
 
-const {overview: content } = mercuryData
+const {overview: {content} } = mercuryData
 
 const Mercury = () => {
   
@@ -38,7 +38,7 @@ const Mercury = () => {
       <img className="mx-auto pt-[150px]" src={FirstPlanet} alt='mercury' />
       <div className="flex flex-col mx-auto text-white">
           <h1 className="text-5xl pr-[30px]">MERCURY</h1>
-            <p>{mercuryData.content}</p>
+            <p>{content}</p>
       </div>
     </div>
   )
