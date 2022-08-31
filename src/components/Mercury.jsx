@@ -2,6 +2,7 @@ import React from "react";
 import FirstPlanet from './assets/planet-mercury.svg';
 
 
+
 const mercuryData = {
   "id": 1,
   "name": "Mercury",
@@ -37,8 +38,9 @@ const Mercury = () => {
     <div className="flex container pt-[50px]">
       <img className="mx-auto pt-[150px]" src={FirstPlanet} alt='mercury' />
       <div className="flex flex-col mx-auto text-white">
-          <h1 className="text-5xl pr-[30px]">MERCURY</h1>
-            <p className="pt-5">{content}</p>
+          <h1 className="text-7xl pr-[30px]">MERCURY</h1>
+            <p className="pt-5 w-48 font-light opacity-50">{content}</p>
+            <p className="opacity-50 pt-5">Source: <a className="underline" href="https://en.wikipedia.org/wiki/Mercury_(planet)">Wikipedia</a></p>
       </div>
     </div>
   )
