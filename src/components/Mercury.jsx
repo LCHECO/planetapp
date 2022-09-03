@@ -37,9 +37,9 @@ const {
 
 const Mercury = () => {
   return (
-    <div className="flex container pt-[50px]">
-      <img className="mx-auto pt-[150px]" src={FirstPlanet} alt="mercury" />
-      <div className="flex flex-col mx-auto space-x-0 text-white">
+    <div className="flex container h-screen pt-[50px]">
+      <img className="mx-auto h-80 pt-10" src={FirstPlanet} alt="mercury" />
+      <div className="flex flex-col mx-auto space-x-2 text-white">
         <h1 className="text-7xl pr-[50px]">MERCURY</h1>
         <p className="pt-5 w-48 font-light opacity-50 text-left">{content}</p>
         <p className="flex flex-row pt-5 space-x-3">
@@ -47,13 +47,13 @@ const Mercury = () => {
           <a href="https://en.wikipedia.org/wiki/Mercury_(planet)">Wikipedia</a>
           <BsFillArrowUpRightSquareFill />
         </p>
-        <div className="flex flex-col">
+        <div className="flex flex-col pt-8">
           <button className="border">01 OVERVIEW</button>
           <button className="border">02 INTERNAL STRUCTURE</button>
           <button className="border">03 SURFACE GEOLOGY</button>
         </div>
       </div>
-      <div className=" inset-x-0 bottom-0">
+      <div className="text-white absolute bottom-56 pl-[250px] pb-[40px]">
           <p>hello</p>
       </div>
     </div>
