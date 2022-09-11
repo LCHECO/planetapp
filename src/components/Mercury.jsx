@@ -4,7 +4,7 @@ import { BsFillArrowUpRightSquareFill } from "react-icons/bs";
 
 const mercuryData = {
   id: 1,
-  name: "Mercury",
+  name: "MERCURY",
   overview: {
     content:
       "Mercury is the smallest planet in the Solar System and the closest to the Sun. Its orbit around the Sun takes 87.97 Earth days, the shortest of all the Sun's planets. Mercury is one of four terrestrial planets in the Solar System, and is a rocky body like Earth.",
@@ -33,6 +33,7 @@ const mercuryData = {
 
 const {
   overview: { content },
+  name,
 } = mercuryData;
 
 const Mercury = () => {
@@ -40,7 +41,7 @@ const Mercury = () => {
     <div className="flex container h-screen pt-[50px]">
       <img className="mx-auto h-80 pt-10" src={FirstPlanet} alt="mercury" />
       <div className="flex flex-col mx-auto space-x-2 text-white">
-        <h1 className="text-7xl pr-[50px]">MERCURY</h1>
+        <h1 className="text-7xl pr-[50px] capitalize">{name}</h1>
         <p className="pt-5 w-48 font-light opacity-50 text-left">{content}</p>
         <p className="flex flex-row pt-5 space-x-3">
           Source:
@@ -53,12 +54,15 @@ const Mercury = () => {
           <button className="border">03 SURFACE GEOLOGY</button>
         </div>
       </div>
-      <div className="text-white absolute bottom-56 pl-[250px] pb-[40px]">
-          <p>hello</p>
+      <div className="absolute bottom-56">
+        <div class="grid grid-cols-4 w-max text-white  items-center">
+          <div>01</div>
+          <div>02</div>
+          <div>03</div>
+          <div>04</div>
+        </div>
       </div>
     </div>
-
-    
   );
 };
 
