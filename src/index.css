@@ -5,6 +5,7 @@
 
 
 body {
+    background-image: url('../src/components/assets/background-stars.svg');
  background-color: #070724;
 
 }

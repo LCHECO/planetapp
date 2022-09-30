@@ -1,4 +1,4 @@
-[
+export const PlanetsData = [
   {
     "id": 1,
     "name": "Mercury",
@@ -200,3 +200,5 @@
     }
   }
 ]
+
+export default PlanetsData;
