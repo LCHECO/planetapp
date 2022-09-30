@@ -10,16 +10,59 @@ console.log(MercuryData);
 
 const Mercury = () => {
   return (
-    <section id="hero">
-      <div className="section-container my-40">
-        <div className="flex flex-col space-y-6 md:flex-row md:space-y-0 md:space-x-4">
-          <img src={FirstPlanet} alt="/" className="left-[50%]" />
-           {/* Content of Planet */}
-          <div className="flex flex-col space-y-6 md:w-1/2 items-center md:flex-row md:space-y-0 md:space-x-6 right-[50%]">
-            <h1 className="text-white ">Mercury</h1>
+    // Global Container
+    <section id="features">
+      <div class="section-container mt-20">
+        <div class="relative flex flex-col items-center md:flex-row md:space-x-64">
+          {/* <!-- Image --> */}
+          <div class="md:w-1/2">
+            <img
+              src={FirstPlanet}
+              alt=""
+              class="md:absolute top-0 right-[50%]"
+            />
+          </div>
+
+          {/* <!-- Items Container --> */}
+          <div class="flex flex-col  mt-10 mb-24 space-y-6 text-xl md:w-1/2 md:mb-60 md:text-left md:pl-16 text-white">
+            <div className="text-6xl">
+              <p>Merucry</p>
+            </div>
+            <div>
+              {/* Planet Content */}
+              <p>Lorem</p>
+            </div>
+            <div>
+              <span>
+                <span>Source:</span><a href="#"> Wikipedia </a>
+              </span>
+            </div>
+            <section>
+              <div className="space-y-3">
+                <div className="border text-center">
+                  <button><span>01</span> OVERVIEW</button>
+                </div>
+                <div className="border text-center">
+                  <button><span>02</span> INTERNAL STRUCTURE</button>
+                </div>
+                <div className="border text-center">
+                  <button><span>03</span> SURFACE GEOLOGY</button>
+                </div>
+              </div>
+            </section>
           </div>
         </div>
       </div>
+      <section className="section-container text-white">
+        <div className="flex flex-col items-center justify-center  md:flex-row md:space-y-0 md:max-w-full md:">
+        <div class="grid  grid-cols-1 md:grid-cols-4 gap-8 md:gap-64">
+            <div>01</div>
+            <div>02</div>
+            <div>03</div>
+            <div>04</div>
+            </div>
+        </div>
+      </section>
     </section>
   );
 };
