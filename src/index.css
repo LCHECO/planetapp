@@ -9,3 +9,8 @@ body {
  background-color: #070724;
 
 }
+
+
+.section-container {
+    @apply max-w-6xl mx-auto text-center px-10;
+  }
