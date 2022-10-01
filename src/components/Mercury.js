@@ -6,27 +6,35 @@ import PlanetsData from "../starter-code/data";
 const MercuryData = PlanetsData.filter(function (PlanetData) {
   return PlanetData.name === "Mercury";
 });
-console.log(MercuryData);
+
+console.log(MercuryData)
+
+const { name } = MercuryData;
+
+console.log(name);
+
+
+
 
 const Mercury = () => {
   return (
     // Global Container
     <section id="features">
-      <div class="section-container mt-20">
-        <div class="relative flex flex-col items-center md:flex-row md:space-x-64">
+      <div className="section-container mt-20">
+        <div className="relative flex flex-col items-center md:flex-row md:space-x-64">
           {/* <!-- Image --> */}
-          <div class="md:w-1/2">
+          <div className="md:w-1/2">
             <img
               src={FirstPlanet}
-              alt=""
-              class="md:absolute top-0 right-[50%]"
+              alt="/"
+              className="md:absolute top-16 right-[50%]"
             />
           </div>
 
           {/* <!-- Items Container --> */}
-          <div class="flex flex-col  mt-10 mb-24 space-y-6 text-xl md:w-1/2 md:mb-60 md:text-left md:pl-16 text-white">
+          <div className="flex flex-col  mt-10 mb-24 space-y-6 text-xl md:w-1/2 md:mb-60 md:text-left md:pl-16 text-white">
             <div className="text-6xl">
-              <p>Merucry</p>
+              <p>Mercury</p>
             </div>
             <div>
               {/* Planet Content */}
@@ -55,7 +63,7 @@ const Mercury = () => {
       </div>
       <section className="section-container text-white">
         <div className="flex flex-col items-center justify-center  md:flex-row md:space-y-0 md:max-w-full md:">
-        <div class="grid  grid-cols-1 md:grid-cols-4 gap-8 md:gap-64">
+        <div className="grid  grid-cols-1 md:grid-cols-4 gap-8 md:gap-64">
             <div>01</div>
             <div>02</div>
             <div>03</div>
